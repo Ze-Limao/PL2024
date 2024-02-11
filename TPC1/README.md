@@ -1,4 +1,4 @@
-## TP1
+## TPC1
 Autor: José Afonso Lopes Correia, A100610
 
 1.Lista ordenada alfabeticamente das modalidades desportivas;
