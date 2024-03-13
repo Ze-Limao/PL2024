@@ -3,47 +3,56 @@
         {
             "id": 1,
             "nome": "Par de meias",
-            "preco": 1.8
+            "preco": 1.8,
+            "quantidade": 4
         },
         {
             "id": 2,
             "nome": "Cheirinho para o carro",
-            "preco": 1.95
+            "preco": 1.95,
+            "quantidade": 3
         },
         {
             "id": 3,
             "nome": "Guarda-Chuva",
-            "preco": 3.5
+            "preco": 3.5,
+            "quantidade": 5
         },
         {
             "id": 4,
             "nome": "Gomas dos Ursinhos",
-            "preco": 1.65
+            "preco": 1.65,
+            "quantidade": 4
         },
         {
             "id": 5,
             "nome": "Bolacha-Joao",
-            "preco": 0.45
+            "preco": 0.45,
+            "quantidade": 6
         },
         {
             "id": 6,
             "nome": "Palmier de Chocolate",
-            "preco": 0.75
+            "preco": 0.75,
+            "quantidade": 6
         },
         {
             "id": 7,
             "nome": "Agua",
-            "preco": 0.6
+            "preco": 0.6,
+            "quantidade": 8
         },
         {
             "id": 8,
             "nome": "Cola-Cola",
-            "preco": 0.95
+            "preco": 0.95,
+            "quantidade": 8
         },
         {
             "id": 9,
             "nome": "Hyper Bock Mini",
-            "preco": 1.2
+            "preco": 1.2,
+            "quantidade": 1
         }
     ]
 }

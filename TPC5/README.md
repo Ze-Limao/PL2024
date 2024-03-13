@@ -54,30 +54,33 @@ Bem-vindo à máquina de vendas do Zé!
 Comandos disponíveis: listar, moeda, selecionar, sair
 
 $ listar
-    Número      |            Nome                              |      Preço
-       1        |        Par de meias                          |       1.8
-       2        |        Cheirinho para o carro                |       1.95
-       3        |        Guarda-Chuva                          |       3.5
-       4        |        Gomas dos Ursinhos                    |       1.65
-       5        |        Bolacha-Joao                          |       0.45
-       6        |        Palmier de Chocolate                  |       0.75
-       7        |        Agua                                  |       0.6
-       8        |        Cola-Cola                             |       0.95
-       9        |        Hyper Bock Mini                       |       1.2
+    Número      |            Nome                        |      Preço      |   Quantidade
+       1        |        Par de meias                    |       1.8       |       4
+       2        |        Cheirinho para o carro          |       1.95      |       3
+       3        |        Guarda-Chuva                    |       3.5       |       5
+       4        |        Gomas dos Ursinhos              |       1.65      |       4
+       5        |        Bolacha-Joao                    |       0.45      |       6
+       6        |        Palmier de Chocolate            |       0.75      |       6
+       7        |        Agua                            |       0.6       |       8
+       8        |        Cola-Cola                       |       0.95      |       8
+       9        |        Hyper Bock Mini                 |       1.2       |       1
 
 $ moeda 2e, 50c, 1e, 10c
 Saldo: 3.6€
 
-$ selecionar 3
-Produto Guarda-Chuva comprado. Saldo restante: 0.1€
+$ selecionar 9
+Produto Hyper Bock Mini comprado. Saldo restante: 2.4€
+
+$ selecionar 9
+Produto Hyper Bock Mini esgotado.
 
 $ sair
 Troco:
-0 x 2€
+1 x 2€
 0 x 1€
 0 x 0.5€
-0 x 0.2€
-1 x 0.1€
+2 x 0.2€
+0 x 0.1€
 0 x 0.05€
 Obrigado por usar a máquina de vendas do Zé!
 ```

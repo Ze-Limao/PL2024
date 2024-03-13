@@ -98,9 +98,9 @@ Bem-vindo à máquina de vendas do Zé!
         lexer.input(line)
         for token in lexer:
             if token.type == "LISTAR":
-                print('     Número     |            Nome                              |       Preço')
+                print('     Número     |            Nome                        |       Preço       |    Quantidade    ')
                 for produto in produtos:
-                    print(f'       {produto["id"]}        |        {produto["nome"]: <30}        |       {produto["preco"]}')
+                    print(f'       {produto["id"]}        |        {produto["nome"]: <24}        |       {produto["preco"]: <5}       |         {produto["quantidade"]}    ')
 
             elif token.type == "MOEDA":
                 moedas = token.value.split(" ")[1].split(",")
@@ -115,8 +115,11 @@ Bem-vindo à máquina de vendas do Zé!
                 id = int(token.value.split(" ")[1])
                 if id in tabela:
                     produto = tabela[id]
-                    if saldo >= produto["preco"]:
+                    if produto["quantidade"] == 0:
+                        print(f"Produto {produto['nome']} esgotado.")
+                    elif saldo >= produto["preco"] and produto["quantidade"] > 0:
                         saldo -= produto["preco"]
+                        produto["quantidade"] -= 1
                         print(f"Produto {produto['nome']} comprado. Saldo restante: {saldo}€")
                     else:
                         print("Saldo insuficiente")
